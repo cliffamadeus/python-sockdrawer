@@ -27,7 +27,7 @@ def run_sum_with_processes(num_procs, n=1_000_000):
     return total, elapsed
 
 if __name__ == "__main__":
-    print("⚙️ Multiprocessing Benchmark\n")
+    print("Multiprocessing Benchmark\n")
     overall_start = time.time()
 
     for procs in range(2, 7):
@@ -35,4 +35,4 @@ if __name__ == "__main__":
         print(f"{procs} process(es): Total = {total}, Time = {elapsed:.6f} seconds")
 
     overall_end = time.time()
-    print(f"\n🧮 Total time for all multiprocessing computations: {overall_end - overall_start:.6f} seconds")
+    print(f"\nTotal time for all multiprocessing computations: {overall_end - overall_start:.6f} seconds")

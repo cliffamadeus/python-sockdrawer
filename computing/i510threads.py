@@ -36,5 +36,5 @@ if __name__ == "__main__":
     total = sum(result)
     elapsed = time.time() - start_time
 
-    print(f"✅ Total Sum: {total}")
-    print(f"⏱️ Time Elapsed with {num_threads} threads: {elapsed:.6f} seconds")
+    print(f"Total Sum: {total}")
+    print(f"Time Elapsed with {num_threads} threads: {elapsed:.6f} seconds")
