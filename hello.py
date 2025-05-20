@@ -4,13 +4,13 @@ num1=4
 num2=5
 
 #Addition
-print(num1+num2)
+print("The sum of ",num1," and ",num2, " is ",num1+num2)
 
 #Subtraction
-print(num1-num2)
+print("The difference of ",num1," and ",num2, " is ",num1-num2)
 
 #Multiplication
-print(num1*num2)
+print("The product of ",num1," and ",num2, " is ",num1*num2)
 
 #Division
-print(num1/num2)
+print("The quotient of ",num1," and ",num2, " is ",num1/num2)
