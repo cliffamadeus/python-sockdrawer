@@ -29,7 +29,7 @@ def run_sum_with_threads(num_threads, n=1_000_000):
     return total, elapsed
 
 if __name__ == "__main__":
-    print("🧵 Threading Benchmark\n")
+    print("Threading Benchmark\n")
     overall_start = time.time()
 
     for threads in range(2, 7):
@@ -37,4 +37,4 @@ if __name__ == "__main__":
         print(f"{threads} thread(s): Total = {total}, Time = {elapsed:.6f} seconds")
 
     overall_end = time.time()
-    print(f"\n🧮 Total time for all threading computations: {overall_end - overall_start:.6f} seconds")
+    print(f"\nTotal time for all threading computations: {overall_end - overall_start:.6f} seconds")

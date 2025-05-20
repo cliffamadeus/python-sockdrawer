@@ -26,5 +26,5 @@ if __name__ == "__main__":
     total = sum(results)
     elapsed = time.time() - start_time
 
-    print(f"✅ Total Sum: {total}")
-    print(f"⏱️ Time Elapsed with {num_cores} processes: {elapsed:.6f} seconds")
+    print(f"Total Sum: {total}")
+    print(f"Time Elapsed with {num_cores} processes: {elapsed:.6f} seconds")
