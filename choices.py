@@ -39,5 +39,4 @@ elif choice==3:
     result =product(num1,num2)
 elif choice==4:
     result =product(num1,num2)
-print("The result is")
-print(result)
+print("The result is: "+ str(result))
