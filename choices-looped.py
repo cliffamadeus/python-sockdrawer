@@ -10,7 +10,21 @@ def product(num1, num2):
 def quotient(num1, num2):
     return num1 / num2 if num2 != 0 else "Undefined (division by zero)"
 
+print("        Welcome to")
 print("Arithmetic with Two Numbers")
+print("-----------------------------------")
+
+while True:
+    print("[1] Exit Application")
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        print("Exiting the program. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+        continue
+
 num1 = int(input("Enter first value: "))
 num2 = int(input("Enter second value: "))
 print("The numbers are", num1, "and", num2)
