@@ -7,6 +7,17 @@ def display_menu():
     print("[5] Cancel Order")
 
 
+def print_receipt(cart):
+    total = 0
+    print("\n--- Receipt ---")
+    for item, price, qty in cart:
+        subtotal = price * qty
+        total += subtotal
+        print(f"{item} x{qty} = ₱{subtotal}")
+    print(f"TOTAL: ₱{total}")
+    print("Thank you for your order!")
+
+
 def main():
     print("Welcome to Ganja Life")
     print("-----------------------------------")
@@ -21,7 +32,6 @@ def main():
         return
 
     cart = []
-    total = 0
 
     while True:
         display_menu()
@@ -37,13 +47,7 @@ def main():
             qty = int(input("Enter quantity: "))
             cart.append(("Ganja Cookie", 40, qty))
         elif choice == 4:
-            print("\n--- Receipt ---")
-            for item, price, qty in cart:
-                subtotal = price * qty
-                total += subtotal
-                print(f"{item} x{qty} = ₱{subtotal}")
-            print(f"TOTAL: ₱{total}")
-            print("Thank you for your order!")
+            print_receipt(cart)
             break
         elif choice == 5:
             print("Order canceled.")
