@@ -19,6 +19,7 @@ def show_cart(cart):
         total += subtotal
         print(f"{item} x{qty} = ₱{subtotal}")
     print(f"TOTAL so far: ₱{total}")
+    print("----------------------")
 
 
 def print_receipt(cart):
