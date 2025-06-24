@@ -10,6 +10,14 @@ def display_num(num):
 name = input("Enter your name: ")
 num = input("Enter your number: ")
 
+while True:
+    num_input = input("Enter a number: ")
+    try:
+        num = int(num_input)
+        break  
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
 
 display_name(name)
 display_num(num)
