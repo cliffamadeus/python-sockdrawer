@@ -4,8 +4,12 @@ def display_name(name):
 def display_num(num):
     print(num)
 
-name = "Cliffmeister"
-display_name(name)
+#name = "Cliffmeister"
+#num = 16
 
-num = 16
+name = input("Enter your name: ")
+num = input("Enter your number: ")
+
+
+display_name(name)
 display_num(num)
