@@ -1,14 +1,13 @@
 def display_name(name):
-    print(name)
+    print("Your name is: "+name)
 
 def display_num(num):
-    print(num)
+    print("Your jersey number is: " + str(num))
 
 #name = "Cliffmeister"
 #num = 16
 
 name = input("Enter your name: ")
-num = input("Enter your number: ")
 
 while True:
     num_input = input("Enter a number: ")
