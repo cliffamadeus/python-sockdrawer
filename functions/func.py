@@ -8,7 +8,6 @@ def display_num(num):
 #num = 16
 
 name = input("Enter your name: ")
-num = input("Enter your number: ")
 
 while True:
     num_input = input("Enter a number: ")
