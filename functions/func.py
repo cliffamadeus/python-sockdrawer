@@ -1,8 +1,8 @@
 def display_name(name):
-    print(name)
+    print("Your name is: "+name)
 
 def display_num(num):
-    print(num)
+    print("Your jersey number is: " + str(num))
 
 #name = "Cliffmeister"
 #num = 16
