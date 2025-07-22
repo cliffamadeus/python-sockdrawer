@@ -1,3 +1,8 @@
+import os
+
+def clear_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def display_name(name):
     print("Your name is: "+name)
 
@@ -6,6 +11,8 @@ def display_num(num):
 
 def main():
     while True:
+        clear_console() 
+        
         name = input("Enter your name: ")
 
         while True:
