@@ -9,8 +9,8 @@ def display_title():
 def display_name(name):
     print("It is nice to meet you "+name)
 
-def display_number(number):
-    print("Oh your favorite number is " +number)
+def display_number(number_input):
+    print("Oh your favorite number is " +number_input)
 
 def main():
 
