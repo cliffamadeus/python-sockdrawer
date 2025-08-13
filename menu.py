@@ -1,4 +1,5 @@
 import os
+import random
 
 #Terminal
 def clear_console():
@@ -15,6 +16,18 @@ def display_name(name):
 #Number
 def display_number(number_input):
     print("Oh your favorite number is " +number_input)
+
+#Random Quotes
+def get_random_quote():
+    quotes = [
+        "Believe you can and you're halfway there.",
+        "Do one thing every day that scares you.",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "Happiness is not something ready-made. It comes from your own actions.",
+        "Your limitation—it's only your imagination.",
+        "Push yourself, because no one else is going to do it for you."
+    ]
+    return random.choice(quotes)
 
 def main():
 
@@ -35,8 +48,10 @@ def main():
             except ValueError:
                 print("Invalid input, please input a valid number")
 
+        clear_console()
+
         #Display title instance
-        display_title()
+        #display_title()
 
         #Display name instance
         display_name(name)
@@ -44,10 +59,15 @@ def main():
         #Display number instance
         display_number(number_input)
 
-        
+        #Print Random Quote
+        #print("Here's a random quote for you, " + display_name(name) + ":\n" + get_random_quote())
+        print(f"Here's a random quote for you, {display_name(name)}:\n{get_random_quote()}")
+
+
         again = input("\nThere's not that much to do here, do you want to exit? y/n :").strip().lower()
         if again !='n':
             print("Lata beech")
+            clear_console()
             break
 
 main()
