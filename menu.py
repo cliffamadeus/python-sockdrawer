@@ -10,9 +10,11 @@ def display_title():
     print("Welcome to my application")
 
 #Name Function
-def display_name(name):
+def greet_name(name):
     print("It is nice to meet you "+name)
 
+def show_name(name):
+    print(name)
 #Number
 def display_number(number_input):
     print("Oh your favorite number is " +number_input)
@@ -54,15 +56,14 @@ def main():
         #display_title()
 
         #Display name instance
-        display_name(name)
+        greet_name(name)
 
         #Display number instance
         display_number(number_input)
 
         #Print Random Quote
-        #print("Here's a random quote for you, " + display_name(name) + ":\n" + get_random_quote())
-        print(f"Here's a random quote for you, {display_name(name)}:\n{get_random_quote()}")
-
+        print ("Hello %s" % name)
+        print ("Here is a random quote for you:\n%s"%get_random_quote())
 
         again = input("\nThere's not that much to do here, do you want to exit? y/n :").strip().lower()
         if again !='n':
