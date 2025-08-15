@@ -62,7 +62,7 @@ def main():
         display_number(number_input)
 
         #Print Random Quote
-        print ("Hello %s" % name)
+        #print ("Hello %s" % name)
         print ("Here is a random quote for you:\n%s"%get_random_quote())
 
         again = input("\nThere's not that much to do here, do you want to exit? y/n :").strip().lower()
